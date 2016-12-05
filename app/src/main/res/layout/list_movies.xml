@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/moviePoster"
+        android:layout_height="88dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/no_image"
+        android:layout_weight="0.12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="50dp" />
+
+    <TextView
+        android:id="@+id/movieName"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_toEndOf="@+id/moviePoster" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieImdb"
+        android:layout_marginLeft="34dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBottom="@+id/moviePoster"
+        android:layout_toEndOf="@+id/moviePoster" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieYear"
+        android:layout_marginLeft="34dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBaseline="@+id/movieImdb"
+        android:layout_alignBottom="@+id/movieImdb"
+        android:layout_toEndOf="@+id/movieImdb" />
+
+</RelativeLayout>
